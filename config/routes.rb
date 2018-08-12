@@ -1,4 +1,38 @@
 Rails.application.routes.draw do
+  #resources :coupons
+
+  #index
+  get "/coupons", to: "coupons#index", as: "coupons"
+
+  #new
+  get "/coupons/new", to: "coupons#new", as: "new_coupon"
+
+  #create
+  post "/coupons", to: "coupons#create"
+
+  #show
+  get "/coupons/:id", to: "coupons#show", as: "coupon"
+  #need to manually create helper route if I'm not using resources method/if my routes are custom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
