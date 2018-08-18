@@ -1,13 +1,11 @@
 require 'rails_helper'
 
-describe 'Route to view' do
-  it 'has an index page' do
-    Coupon.new(coupon_code: "ASD123", store: "Chipotle")
-    Coupon.new(coupon_code: "XYZ098", store: "Jamba")
-    visit coupons_path
-    expect(page.status_code).to eq(200)
-  end
-end
+# describe 'Route to view' do
+#   # it 'has an index page' do
+#   #   visit coupons_path
+#   #   expect(page.status_code).to eq(200)
+#   end
+# end
 
 describe 'Multiple coupons are shown' do
   it 'on the index page' do
